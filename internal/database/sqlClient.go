@@ -28,7 +28,7 @@ type SQLClient struct {
 
 func NewSQLClient(cfg Config) (*SQLClient, error) {
 	dbSource := fmt.Sprintf(
-		"host=%s port=%d user=%s password=%s dbname=%s sslmode=disable",
+		"host=%s port=%d user=%s password=%s dbname=%s sslmode=enable",
 		cfg.Host,
 		cfg.Port,
 		cfg.User,
